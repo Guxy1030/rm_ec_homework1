@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bilnk\startup_stm32f103xb.o"
+"bilnk\main.o"
+"bilnk\stm32f1xx_it.o"
+"bilnk\stm32f1xx_hal_msp.o"
+"bilnk\stm32f1xx_hal_gpio_ex.o"
+"bilnk\stm32f1xx_hal_tim.o"
+"bilnk\stm32f1xx_hal_tim_ex.o"
+"bilnk\stm32f1xx_hal.o"
+"bilnk\stm32f1xx_hal_rcc.o"
+"bilnk\stm32f1xx_hal_rcc_ex.o"
+"bilnk\stm32f1xx_hal_gpio.o"
+"bilnk\stm32f1xx_hal_dma.o"
+"bilnk\stm32f1xx_hal_cortex.o"
+"bilnk\stm32f1xx_hal_pwr.o"
+"bilnk\stm32f1xx_hal_flash.o"
+"bilnk\stm32f1xx_hal_flash_ex.o"
+"bilnk\stm32f1xx_hal_exti.o"
+"bilnk\system_stm32f1xx.o"
+--strict --scatter "bilnk\bilnk.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bilnk.map" -o bilnk\bilnk.axf
