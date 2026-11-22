@@ -1,0 +1,12 @@
+# Keil 编译产物与缓存
+*/MDK-ARM/Debug/
+*.uvoptx
+*.uvgui.*
+*.axf
+*.hex
+*.o
+*.lst
+*.d
+
+# CubeMX 临时文件
+*.mxproject
